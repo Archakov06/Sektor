@@ -1,0 +1,16 @@
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+.full-width {
+  width: 100%;
+  box-sizing: border-box;
+  &-max {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}

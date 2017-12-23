@@ -1,0 +1,71 @@
+@mixin button-mixin($color) {
+  background-color: $color;
+  border: 0;
+  color: #fff;
+  &:hover,
+  &:focus {
+    background-color: darken($color, 5%);
+  }
+}
+
+button {
+  background: #fff;
+  font-size: 12px;
+  border: 1px solid $gray-color;
+  box-sizing: border-box;
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: darken($gray-color, 8%);
+  }
+
+  &.o-primary {
+    border-color: $blue-color;
+    color: $blue-color;
+    &:hover,
+    &:focus {
+      border-color: darken($blue-color, 8%);
+      color: darken($blue-color, 10%);
+    }
+  }
+
+  &.large {
+    font-size: 14px;
+    padding: 13px 22px;
+  }
+
+  &.small {
+    font-size: 11px;
+    padding: 9px 18px;
+  }
+
+  &.primary {
+    @include button-mixin($blue-color);
+  }
+
+  &.success {
+    @include button-mixin($green-color);
+  }
+
+  &.warning {
+    @include button-mixin($orange-color);
+  }
+
+  &.error {
+    @include button-mixin($red-color);
+  }
+
+  &.rounded {
+    border-radius: 30px;
+  }
+
+  &.pointed {
+    border-radius: 0;
+  }
+}

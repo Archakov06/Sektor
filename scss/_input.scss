@@ -1,0 +1,47 @@
+input[type='email'],
+input[type='number'],
+input[type='search'],
+input[type='text'],
+input[type='tel'],
+input[type='url'],
+input[type='password'],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type='email'],
+input[type='number'],
+input[type='search'],
+input[type='text'],
+input[type='tel'],
+input[type='url'],
+input[type='password'],
+textarea,
+select {
+  border: 1px solid lighten($gray-color, 9%);
+  border-radius: 3px;
+  padding: 11px 15px;
+  font-size: 14px;
+
+  &:focus {
+    border-color: darken($gray-color, 3%);
+  }
+
+  &.primary {
+    border-color: $blue-color;
+  }
+
+  &.success {
+    border-color: $green-color;
+  }
+
+  &.warning {
+    border-color: $orange-color;
+  }
+
+  &.error {
+    border-color: $red-color;
+  }
+}
