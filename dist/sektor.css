@@ -17,7 +17,7 @@ body {
   color: #242424;
   font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-size: 1.6em;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.01em;
   line-height: 1.6;
 }
@@ -401,6 +401,84 @@ button.pointed {
   border-radius: 0;
 }
 
+input[type='radio'],
+input[type='checkbox'] {
+  position: absolute;
+  opacity: 0;
+}
+
+input[type='radio'] + label,
+input[type='checkbox'] + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+
+input[type='radio'] + label:before,
+input[type='checkbox'] + label:before {
+  content: '';
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 1px solid #ececec;
+}
+
+input[type='radio']:checked + label:before,
+input[type='checkbox']:checked + label:before {
+  background: #4796ff;
+  border-width: 0;
+}
+
+input[type='radio']:disabled + label,
+input[type='checkbox']:disabled + label {
+  color: #b8b8b8;
+  cursor: not-allowed;
+}
+
+input[type='radio']:disabled + label:before,
+input[type='checkbox']:disabled + label:before {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #ddd;
+}
+
+input[type='radio'] + label:before {
+  border-radius: 30px;
+}
+
+input[type='radio']:checked + label:after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  background-color: #fff;
+  border-radius: 30px;
+  left: 6px;
+  top: 8px;
+}
+
+input[type='checkbox'] + label:before {
+  border-radius: 1px;
+}
+
+input[type='checkbox']:checked + label:after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 11px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  -webkit-box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+          box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 input[type='email'],
 input[type='number'],
 input[type='search'],
@@ -553,6 +631,10 @@ table {
   width: 100%;
 }
 
+table thead th {
+  font-weight: 600;
+}
+
 table.no-borders tbody td {
   border-bottom: 0;
 }
@@ -585,15 +667,12 @@ table.striped th:last-child {
   padding-right: 15px;
 }
 
-table thead th {
-  font-weight: 500;
-}
-
 table td,
 table th {
   border-bottom: 0.1rem solid #dfe4eb;
   padding: 1.2rem 1.5rem;
   text-align: left;
+  font-weight: 300;
 }
 
 table td:first-child,

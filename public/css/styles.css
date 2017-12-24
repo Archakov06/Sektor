@@ -67,6 +67,11 @@ h3.title {
   margin-bottom: 50px;
 }
 
+.components-group--checkbox label {
+  margin-bottom: 5px;
+  display: block;
+}
+
 @media only screen and (max-width: 960px) {
   button {
     width: 100%;

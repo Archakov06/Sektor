@@ -2,7 +2,7 @@ window.onload = function() {
   var html = document.querySelectorAll('.components-group');
 
   function replaceExtra(str) {
-    var replaced = ['<div class="block"></div>', ' data-title="(.*?)"'];
+    var replaced = ['<div class="block"></div>', ' data-title="(.*?)"', '<br>'];
     var pattern = new RegExp(replaced.join('|'), 'g');
     return str.replace(pattern, '');
   }
