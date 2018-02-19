@@ -8,17 +8,21 @@
   }
 }
 
+.button,
 button {
+  display: inline-block;
   background: #fff;
-  font-size: 12px;
   border: 1px solid $gray-color;
   box-sizing: border-box;
   border-radius: 3px;
   text-transform: uppercase;
-  padding: 11px 22px;
   font-weight: 600;
-  letter-spacing: 0.1px;
   cursor: pointer;
+  font-size: 12px;
+  height: 3.8rem;
+  line-height: 3.8rem;
+  letter-spacing: 0.03rem;
+  padding: 0 2.5rem;
 
   &:hover,
   &:focus {
@@ -36,13 +40,19 @@ button {
   }
 
   &.large {
+    height: 4.2rem;
+    line-height: 4.2rem;
     font-size: 14px;
-    padding: 13px 22px;
   }
 
   &.small {
     font-size: 11px;
-    padding: 9px 18px;
+    height: 3.4rem;
+    line-height: 3.4rem;
+  }
+
+  &.clear {
+    border-width: 0;
   }
 
   &.primary {
@@ -67,5 +77,15 @@ button {
 
   &.pointed {
     border-radius: 0;
+  }
+}
+
+a.button {
+  letter-spacing: 0.06rem;
+  &.clear {
+    color: $blue-color;
+    &:hover {
+      background-color: lighten($blue-color, 33%);
+    }
   }
 }

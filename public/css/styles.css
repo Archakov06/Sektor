@@ -8,7 +8,7 @@
 .components-group > * {
   margin-bottom: 20px;
 }
-.components-group button {
+.components-group > * {
   margin-right: 15px;
 }
 

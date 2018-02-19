@@ -315,90 +315,134 @@ small {
   font-weight: 100;
 }
 
+.button,
 button {
+  display: inline-block;
   background: #fff;
-  font-size: 12px;
   border: 1px solid #c2cdda;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 3px;
   text-transform: uppercase;
-  padding: 11px 22px;
   font-weight: 600;
-  letter-spacing: 0.1px;
   cursor: pointer;
+  font-size: 12px;
+  height: 3.8rem;
+  line-height: 3.8rem;
+  letter-spacing: 0.03rem;
+  padding: 0 2.5rem;
 }
 
-button:hover, button:focus {
+.button:hover, .button:focus,
+button:hover,
+button:focus {
   border-color: #a9b8cb;
 }
 
+.button.o-primary,
 button.o-primary {
   border-color: #4796ff;
   color: #4796ff;
 }
 
-button.o-primary:hover, button.o-primary:focus {
+.button.o-primary:hover, .button.o-primary:focus,
+button.o-primary:hover,
+button.o-primary:focus {
   border-color: #1e7fff;
   color: #1479ff;
 }
 
+.button.large,
 button.large {
+  height: 4.2rem;
+  line-height: 4.2rem;
   font-size: 14px;
-  padding: 13px 22px;
 }
 
+.button.small,
 button.small {
   font-size: 11px;
-  padding: 9px 18px;
+  height: 3.4rem;
+  line-height: 3.4rem;
 }
 
+.button.clear,
+button.clear {
+  border-width: 0;
+}
+
+.button.primary,
 button.primary {
   background-color: #4796ff;
   border: 0;
   color: #fff;
 }
 
-button.primary:hover, button.primary:focus {
+.button.primary:hover, .button.primary:focus,
+button.primary:hover,
+button.primary:focus {
   background-color: #2e87ff;
 }
 
+.button.success,
 button.success {
   background-color: #4bbf7c;
   border: 0;
   color: #fff;
 }
 
-button.success:hover, button.success:focus {
+.button.success:hover, .button.success:focus,
+button.success:hover,
+button.success:focus {
   background-color: #3fb16f;
 }
 
+.button.warning,
 button.warning {
   background-color: #ffaf14;
   border: 0;
   color: #fff;
 }
 
-button.warning:hover, button.warning:focus {
+.button.warning:hover, .button.warning:focus,
+button.warning:hover,
+button.warning:focus {
   background-color: #faa500;
 }
 
+.button.error,
 button.error {
   background-color: #f75c5c;
   border: 0;
   color: #fff;
 }
 
-button.error:hover, button.error:focus {
+.button.error:hover, .button.error:focus,
+button.error:hover,
+button.error:focus {
   background-color: #f64444;
 }
 
+.button.rounded,
 button.rounded {
   border-radius: 30px;
 }
 
+.button.pointed,
 button.pointed {
   border-radius: 0;
+}
+
+a.button {
+  letter-spacing: 0.06rem;
+}
+
+a.button.clear {
+  color: #4796ff;
+}
+
+a.button.clear:hover {
+  background-color: #eff6ff;
 }
 
 input[type='radio'],
