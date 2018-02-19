@@ -323,7 +323,7 @@ button {
           box-sizing: border-box;
   border-radius: 3px;
   text-transform: uppercase;
-  padding: 10px 20px;
+  padding: 11px 22px;
   font-weight: 600;
   letter-spacing: 0.1px;
   cursor: pointer;
@@ -479,6 +479,11 @@ input[type='checkbox']:checked + label:after {
           transform: rotate(45deg);
 }
 
+input,
+textarea {
+  letter-spacing: 0.3px;
+}
+
 input[type='email'],
 input[type='number'],
 input[type='search'],
@@ -490,6 +495,10 @@ textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+input[type='password'] {
+  letter-spacing: 1px;
 }
 
 input[type='email'],
@@ -505,6 +514,19 @@ select {
   border-radius: 3px;
   padding: 11px 15px;
   font-size: 14px;
+}
+
+input[type='email']:disabled,
+input[type='number']:disabled,
+input[type='search']:disabled,
+input[type='text']:disabled,
+input[type='tel']:disabled,
+input[type='url']:disabled,
+input[type='password']:disabled,
+textarea:disabled,
+select:disabled {
+  background-color: rgba(223, 228, 235, 0.2);
+  cursor: not-allowed;
 }
 
 input[type='email']:focus,
@@ -567,8 +589,20 @@ select.error {
   border-color: #f75c5c;
 }
 
+input[type='email'].rounded,
+input[type='number'].rounded,
+input[type='search'].rounded,
+input[type='text'].rounded,
+input[type='tel'].rounded,
+input[type='url'].rounded,
+input[type='password'].rounded,
+textarea.rounded,
+select.rounded {
+  border-radius: 30px;
+}
+
 .notification {
-  background-color: #a2b3c7;
+  background-color: #899eb7;
   color: #fff;
   font-size: 14px;
   padding: 15px 40px 15px 20px;
@@ -609,19 +643,19 @@ select.error {
   left: -4px;
 }
 
-.notification--primary {
+.notification.primary {
   background-color: #4796ff;
 }
 
-.notification--success {
+.notification.success {
   background-color: #4bbf7c;
 }
 
-.notification--warning {
+.notification.warning {
   background-color: #ffaf14;
 }
 
-.notification--error {
+.notification.error {
   background-color: #f75c5c;
 }
 

@@ -1,3 +1,8 @@
+input,
+textarea {
+  letter-spacing: 0.3px;
+}
+
 input[type='email'],
 input[type='number'],
 input[type='search'],
@@ -9,6 +14,10 @@ textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+input[type='password'] {
+  letter-spacing: 1px;
 }
 
 input[type='email'],
@@ -24,6 +33,11 @@ select {
   border-radius: 3px;
   padding: 11px 15px;
   font-size: 14px;
+
+  &:disabled {
+    background-color: rgba(223, 228, 235, 0.2);
+    cursor: not-allowed;
+  }
 
   &:focus {
     border-color: darken($gray-color, 3%);
@@ -43,5 +57,9 @@ select {
 
   &.error {
     border-color: $red-color;
+  }
+
+  &.rounded {
+    border-radius: 30px;
   }
 }

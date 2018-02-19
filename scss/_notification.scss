@@ -1,5 +1,5 @@
 .notification {
-  background-color: darken($gray-color, 10%);
+  background-color: darken($gray-color, 18%);
   color: #fff;
   font-size: 14px;
   padding: 15px 40px 15px 20px;
@@ -36,19 +36,19 @@
     }
   }
 
-  &--primary {
+  &.primary {
     background-color: $blue-color;
   }
 
-  &--success {
+  &.success {
     background-color: $green-color;
   }
 
-  &--warning {
+  &.warning {
     background-color: $orange-color;
   }
 
-  &--error {
+  &.error {
     background-color: $red-color;
   }
 }

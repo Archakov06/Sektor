@@ -72,6 +72,11 @@ h3.title {
   display: block;
 }
 
+.components-group--inputs input,
+.components-group--inputs textarea {
+  width: 100%;
+}
+
 @media only screen and (max-width: 960px) {
   button {
     width: 100%;
